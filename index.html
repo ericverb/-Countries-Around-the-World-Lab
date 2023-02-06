@@ -14,14 +14,13 @@
             <h2 id="CountryName"></h2>
             <h2 id="OfficialLanguage"></h2>
             <h2 id="HelloWorld"></h2>
-            <select id="CountryList">
+            <select id="CountryList" onchange="SwitchCountry(getOption())">
                 <option value="USA">USA</option>
                 <option value="Mexico">Mexico</option>
                 <option value="France">France</option>
                 <option value="Belguim">Belguim</option>
                 <option value="Germany">Germany</option>
             </select>
-            <button onclick="SwitchCountry(getOption())">Swap Country</button>
         </div>
     </div>
 <script>
