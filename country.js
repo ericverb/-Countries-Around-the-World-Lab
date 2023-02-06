@@ -9,7 +9,7 @@ class Country {
 let usa = new Country("USA", "English", "Hello!", ["red", "white", "blue"]);
 let mexico = new Country("Mexico", "Spanish", "Hola!", ["red", "white", "green"]);
 let france = new Country("France", "French", "Bonjour!", ["blue", "white", "red"])
-let belguim = new Country("Belguim", "Flemish", "Hallo", ["black", "yellow", "red"])
+let belgium = new Country("Belgium", "Flemish", "Hallo", ["black", "yellow", "red"])
 let germany = new Country("Germany", "German", "Hallo!", ["black", "red", "yellow"])
 
 
@@ -21,7 +21,8 @@ function DisplayColors(Country)
 }
 
 
-function SwitchCountry(name) {
+function SwitchCountry(name) 
+{
 
     let input = name;
     document.getElementById('CountryName').style.textAlign = "center";
@@ -55,9 +56,9 @@ function SwitchCountry(name) {
         document.getElementById('flagImage').setAttribute('src', "https://flagcdn.com/128x96/fr.png")
         DisplayColors(Country)    
     }
-    else if (input === "Belguim") 
+    else if (input === "Belgium") 
     {
-        Country = belguim;
+        Country = belgium;
         document.getElementById('CountryName').innerText = Country.name
         document.getElementById('OfficialLanguage').innerText = Country.lang
         document.getElementById('HelloWorld').innerText = Country.greeting
