@@ -31,83 +31,58 @@ function SwitchCountry(name) {
     if (input === "USA") 
     {
         Country = usa;
-        let CountryName = document.getElementById('CountryName')
-        CountryName.innerText = Country.name
-        let OfficialLanguage = document.getElementById('OfficialLanguage')
-        OfficialLanguage.innerText = Country.lang
-        let HelloWorld = document.getElementById('HelloWorld')
-        HelloWorld.innerText = Country.greeting
+        document.getElementById('CountryName').innerText = Country.name
+        document.getElementById('OfficialLanguage').innerText = Country.lang
+        document.getElementById('HelloWorld').innerText = Country.greeting
+        document.getElementById('flagImage').setAttribute('src', "https://flagcdn.com/128x96/us.png")
         DisplayColors(Country)
-        let img = document.getElementById('flagImage');
-        img.setAttribute('src', "https://flagcdn.com/128x96/us.png")
-        
     }
     else if (input === "Mexico") 
     {
         Country = mexico;
-        let CountryName = document.getElementById('CountryName')
-        CountryName.innerText = Country.name
-        let OfficialLanguage = document.getElementById('OfficialLanguage')
-        OfficialLanguage.innerText = Country.lang
-        let HelloWorld = document.getElementById('HelloWorld')
-        HelloWorld.innerText = Country.greeting
+        document.getElementById('CountryName').innerText = Country.name
+        document.getElementById('OfficialLanguage').innerText = Country.lang
+        document.getElementById('HelloWorld').innerText = Country.greeting
+        document.getElementById('flagImage').setAttribute('src', "https://flagcdn.com/128x96/mx.png")
         DisplayColors(Country)
-        let img = document.getElementById('flagImage');
-        img.setAttribute('src', "https://flagcdn.com/128x96/mx.png")
     }
     else if (input === "France")
      {
         Country = france;
-        let CountryName = document.getElementById('CountryName')
-        CountryName.innerText = Country.name
-        let OfficialLanguage = document.getElementById('OfficialLanguage')
-        OfficialLanguage.innerText = Country.lang
-        let HelloWorld = document.getElementById('HelloWorld')
-        HelloWorld.innerText = Country.greeting
-        DisplayColors(Country)
-        let img = document.getElementById('flagImage');
-        img.setAttribute('src', "https://flagcdn.com/128x96/fr.png")      
+        document.getElementById('CountryName').innerText = Country.name
+        document.getElementById('OfficialLanguage').innerText = Country.lang
+        document.getElementById('HelloWorld').innerText = Country.greeting
+        document.getElementById('flagImage').setAttribute('src', "https://flagcdn.com/128x96/fr.png")
+        DisplayColors(Country)    
     }
     else if (input === "Belguim") 
     {
         Country = belguim;
-        let CountryName = document.getElementById('CountryName')
-        CountryName.innerText = Country.name
-        let OfficialLanguage = document.getElementById('OfficialLanguage')
-        OfficialLanguage.innerText = Country.lang
-        let HelloWorld = document.getElementById('HelloWorld')
-        HelloWorld.innerText = Country.greeting
-        DisplayColors(Country)
-        let img = document.getElementById('flagImage');
-        img.setAttribute('src', "https://flagcdn.com/128x96/be.png")       
+        document.getElementById('CountryName').innerText = Country.name
+        document.getElementById('OfficialLanguage').innerText = Country.lang
+        document.getElementById('HelloWorld').innerText = Country.greeting
+        document.getElementById('flagImage').setAttribute('src', "https://flagcdn.com/128x96/be.png")
+        DisplayColors(Country)     
     }
     else if (input === "Germany") 
     {
         Country = germany;
-        let CountryName = document.getElementById('CountryName')
-        CountryName.innerText = Country.name
-        let OfficialLanguage = document.getElementById('OfficialLanguage')
-        OfficialLanguage.innerText = Country.lang
-        let HelloWorld = document.getElementById('HelloWorld')
-        HelloWorld.innerText = Country.greeting
+        document.getElementById('CountryName').innerText = Country.name
+        document.getElementById('OfficialLanguage').innerText = Country.lang
+        document.getElementById('HelloWorld').innerText = Country.greeting
+        document.getElementById('flagImage').setAttribute('src', "https://flagcdn.com/128x96/de.png")
         DisplayColors(Country)
-        let img = document.getElementById('flagImage');
-        img.setAttribute('src', "https://flagcdn.com/128x96/de.png")
         
     }
     else
     {
-        let CountryName = document.getElementById('CountryName')
-        CountryName.innerText = ''
-        let OfficialLanguage = document.getElementById('OfficialLanguage')
-        OfficialLanguage.innerText = ''
-        let HelloWorld = document.getElementById('HelloWorld')
-        HelloWorld.innerText = ''
+        document.getElementById('CountryName').innerText = ''
+        document.getElementById('OfficialLanguage').innerText = ''
+        document.getElementById('HelloWorld').innerText = ''
         document.getElementById('Color1').style.backgroundColor = 'gray'
         document.getElementById('Color2').style.backgroundColor = 'white'
         document.getElementById('Color3').style.backgroundColor = 'lightgray'
-        let img = document.getElementById('flagImage');
-        img.setAttribute('src', "https://flagcdn.com/128x96/un.png")
+        document.getElementById('flagImage').setAttribute('src', "https://flagcdn.com/128x96/un.png")
         
     }
 }
