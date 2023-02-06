@@ -24,6 +24,9 @@ function DisplayColors(Country)
 function SwitchCountry(name) {
 
     let input = name;
+    document.getElementById('CountryName').style.textAlign = "center";
+    document.getElementById('OfficialLanguage').style.textAlign = "center";
+    document.getElementById('HelloWorld').style.textAlign = "center";
     
     if (input === "USA") 
     {

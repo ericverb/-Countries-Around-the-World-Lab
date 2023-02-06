@@ -1,20 +1,17 @@
 <html>
 
 <head>
-
     <link href="style.css" rel="stylesheet" />
     <script src="country.js"></script>
-
 </head>
-
 <body id="Color1">
     <div id="Color2" class="centerElement halfWidth">
         <div id="Color3" class="floatLeft halfWidth">
-            <img id="flagImage" src="https://flagcdn.com/128x96/un.png" alt="Country Flag"/>
+            <img id="flagImage" src="https://flagcdn.com/128x96/un.png" alt="Country Flag" class="centerElement"/>
             <h2 id="CountryName"></h2>
             <h2 id="OfficialLanguage"></h2>
             <h2 id="HelloWorld"></h2>            
-            <select id="CountryList" onchange="SwitchCountry(getOption())">
+            <select id="CountryList" onchange="SwitchCountry(getOption())" class="centerElement">
                 <option value="Select Country" >Select Country</option>
                 <option value="USA">USA</option>
                 <option value="Mexico">Mexico</option>
@@ -25,14 +22,12 @@
         </div>
     </div>
 <script>
-    function  getOption() {
+    function  getOption()
+    {
         var select = document.getElementById('CountryList');
         var value = select.options[select.selectedIndex].value;
         return value;
     }
-
 </script>
-
 </body>
-
 </html>
