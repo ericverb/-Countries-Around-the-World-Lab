@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+    <link href="style.css" rel="stylesheet" />
+    <script src="country.js"></script>
+
+</head>
+
+<body id="Color1">
+    <div id="Color2" class="centerElement halfWidth">
+        <div id="Color3" class="floatLeft halfWidth">
+            <img id="flagImage" src="https://flagcdn.com/16x12/us.png" alt="Country Flag"/>
+            <h2 id="CountryName"></h2>
+            <h2 id="OfficialLanguage"></h2>
+            <h2 id="HelloWorld"></h2>
+            <select id="CountryList">
+                <option value="USA">USA</option>
+                <option value="Mexico">Mexico</option>
+                <option value="France">France</option>
+                <option value="Belguim">Belguim</option>
+                <option value="Germany">Germany</option>
+            </select>
+            <button onclick="SwitchCountry(getOption())">Swap Country</button>
+        </div>
+    </div>
+<script>
+    function  getOption() {
+        var select = document.getElementById('CountryList');
+        var value = select.options[select.selectedIndex].value;
+        return value;
+    }
+
+</script>
+
+</body>
+
+</html>
