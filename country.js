@@ -6,10 +6,10 @@ class Country {
         this.colors = colors;
     }
 }
-let usa = new Country("USA", "Murican", "Hello!", ["red", "white", "blue"]);
-let mexico = new Country("Mexico", "Spanish", "Hola mundo!", ["red", "white", "green"]);
-let france = new Country("France", "Arabic and Berber", "Bonjour!", ["blue", "white", "red"])
-let belguim = new Country("Belguim", "Dutch and Flemish", "Hallo", ["black", "yellow", "red"])
+let usa = new Country("USA", "English", "Hello!", ["red", "white", "blue"]);
+let mexico = new Country("Mexico", "Spanish", "Hola!", ["red", "white", "green"]);
+let france = new Country("France", "French", "Bonjour!", ["blue", "white", "red"])
+let belguim = new Country("Belguim", "Flemish", "Hallo", ["black", "yellow", "red"])
 let germany = new Country("Germany", "German", "Hallo!", ["black", "red", "yellow"])
 
 
