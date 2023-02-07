@@ -70,7 +70,7 @@ function SwitchCountry(countrySelected) {
             break;
         default:
             document.getElementById('CountryName').innerText = 'Hello'
-            document.getElementById('OfficialLanguage').innerText = 'and welcome too'
+            document.getElementById('OfficialLanguage').innerText = 'and welcome to'
             document.getElementById('HelloWorld').innerText = 'countries around the world'
             document.getElementById('Color1').style.backgroundColor = 'gray'
             document.getElementById('Color2').style.backgroundColor = 'white'
