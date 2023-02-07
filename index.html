@@ -8,9 +8,9 @@
     <div id="Color2" class="centerElement halfWidth">
         <div id="Color3" class="floatLeft halfWidth">
             <img id="flagImage" src="https://flagcdn.com/128x96/un.png" alt="Country Flag" class="centerElement"/>
-            <h2 id="CountryName"></h2>
-            <h2 id="OfficialLanguage"></h2>
-            <h2 id="HelloWorld"></h2>            
+            <h2 id="CountryName">Hello</h2>
+            <h2 id="OfficialLanguage">and welcome too</h2>
+            <h2 id="HelloWorld">countries around the world!</h2>            
             <select id="CountryList" onchange="SwitchCountry(getOption())" class="centerElement">
                 <option value="Select Country" >Select Country</option>
                 <option value="USA">USA</option>
@@ -22,11 +22,14 @@
         </div>
     </div>
 <script>
+    document.getElementById('CountryName').style.textAlign = "center";
+    document.getElementById('OfficialLanguage').style.textAlign = "center";
+    document.getElementById('HelloWorld').style.textAlign = "center";
     function  getOption()
     {
         var select = document.getElementById('CountryList');
-        var value = select.options[select.selectedIndex].value;
-        return value;
+        var countrySelected = select.options[select.selectedIndex].value;
+        return countrySelected;
     }
 </script>
 </body>
